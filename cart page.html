@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        Grocery Store
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+
+ .card-header {
+
+  background-color: rgba(161, 82, 82, 0.699);
+  
+ }
+ .aliceblue-text{
+   color: aliceblue;
+ }
+ 
+.card-footer {
+
+background-color: rgba(161, 82, 82, 0.699);
+
+}
+.bg {
+  /* The image used */
+  background-image: url("istockphoto-93442232-612x612.jpg");
+  
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+</style> 
+
+  </head>
+
+<body>
+
+  <div class="card text-center">  <!-- Creating a card text within the <body> tags which is made out of 3 parts(header, body and the footer)-->
+    <div class="card-header">  <!-- The first division or part of the card which is the header called card-header-->
+
+      <a href="indeX.html" class="aliceblue-text">Home</a>
+      <a href="cart page.html" class="aliceblue-text">Cart Page</a>
+      <a href="contactPage.html" class="aliceblue-text">Contact page</a>
+
+    </div>
+    <div class="card-body bg">  <!-- The second division or part of the card which is the body called card-body-->
+     
+      
+      <h2 class="text-start"> List of the product</h2> <!-- class="text-start" This is inline styling forcing the text to start on the left -->
+      
+        <ol class="text-start">
+          <li > Eggs</li>
+          <li>Yogurt </li>
+          <li>Meat</li>
+          <li>cereal</li>
+          <li>energy drinks</li>
+      </ol>
+    
+      <br> <br>
+
+      <h2 class="text-start">Products and Description</h2>
+   
+      <!--The code below creates two eqaul-width columns across all devices and viewports using our predefined grid classes. Those columns are centered in the page with the parent container-->
+      <div class="container">
+       <div class="row">
+         <div class="col">
+   
+           <img src="istockphoto-629639418-612x612.jpg" style="width: 450px;height: 450px;" alt="eggs">
+           <p>Description: Eggs are laid by female animals of many different species, including birds, reptiles, amphibians, 
+          a few mammals, and fish, and many of these have been eaten by humans for thousands of years</p>
+          <label for="quantity">Quantity in stock</label>
+   
+         <select name="quantity" id="quantity">
+            <option value="quantity">3000</option>
+     
+         </select>
+           
+           <p>Price: R59 per tray </p>
+   
+         </div>
+         <div class="col">
+   
+           <img src="000313850.webp" style="width: 450px;height: 450px;" alt="yogurt">
+           <p>Description: Yogurt is a dairy product made by fermenting milk with a yogurt culture. 
+              It provides protein and calcium, and it may enhance healthy gut bacteria.</p>
+              <label for="quantity">Quantity in stock:</label>
+   
+           <select name="quantity" id="quantity">
+           <option value="1000">1000</option>
+     
+           </select>
+           
+           <p>Price: R18 250ml</p>
+           
+         </div>
+         
+         </div> <!--End of the first row of the two columns-->
+   
+         <div class="row"> <!--Begining of the second row of the two columns. it also fall under the same parent container as the first on-->
+           <div class="col">
+   
+             <img src="N6DmsCO4o9htHjRfWZADzFXC3PyCUio3qyN0tVSO.jpeg" style="width: 450px;height: 450px;" alt="meat">
+             <p>Description: Meat is animal flesh that is eaten as food. Humans have hunted, 
+           farmed, and scavenged animals for meat since prehistoric times.</p>
+             <label for="quantity">Quantity in stock</label>
+   
+            <select name="quantity" id="quantity">
+              <option value="volvo">6000kg</option>
+            </select>
+           
+           <p>Price: R45 per Kg</p>
+             
+           </div>
+           <div class="col">
+   
+             <img src="R (1).jpg" style="width: 450px;height: 450px;" alt="cereal">
+             <p>Description: The meaning of CEREAL is relating to grain or to the plants that produce it; also : made of grain. How to use cereal in a sentence.</p>
+             <label for="quantity">Quantity in stock</label>
+     
+             <select name="quantity" id="quantity">
+               <option value="quantity">2000</option>
+               
+             </select>
+             <p> R39,99 750g</p>
+            
+           </div>
+   
+         </div>
+   
+         <div class="row">
+           <div class="col">
+             
+             <img src="R.jpg" style="width: 450px;height: 450px;" alt="energy-drink">
+             <p>Description: Energy drinks are widely promoted as products that increase energy and enhance mental alertness and physical performance.</p>
+             <label for="quantity">Quantity in stock</label>
+   
+               <select name="quantity" id="quantity">
+                 <option value="quantity">9000</option>
+             
+               </select>
+             <p>Price: R12,99 500ml</p>
+   
+           </div>
+           <div class="col">
+            
+           </div>
+         </div>
+       </div> 
+
+    </div>
+    <div class="card-footer text-muted"> <!-- The third division or part of the card which is the footer called card-footer text-muted-->
+      <p> © 2022 all rights reserved Author:  Group 2</p>
+    </div>
+  </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+                                                                                                                                                                              
+</html>
